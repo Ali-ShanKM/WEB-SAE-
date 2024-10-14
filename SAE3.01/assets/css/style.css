@@ -1,0 +1,280 @@
+body {
+    font-family: 'Inter';
+    margin: 0;
+    padding: 0;
+    background: #E2F2F2;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1, h2, h3 {
+    color: #1B2D42;
+}
+
+header {
+    font-size: 1.2em;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 25px 15px 7px;
+    box-shadow: 0 0 2px 0 grey;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+main {
+    flex: 1;
+}
+
+#logo {
+    width: 220px;
+    padding: 10px 0 0 20px;
+}
+
+.navbar {
+    list-style-type: none;
+    display: flex;
+    gap: 75px;
+    padding: 9px 0 0 0;
+}
+.navbar a {
+    color: #0078BE;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar .pageCourante a {
+    color: #56AE31;
+    text-decoration: underline 3px;
+}
+
+.navbar li {
+    transition: 0.25s;
+}
+
+.navbar li:hover {
+    text-decoration: underline 3px;
+    color: #0078BE;
+    transition: 0.25s;
+    transform: scale(115%);
+}
+
+.barreRecherche {
+    background: #F5F5F5;
+    border-radius: 22px;
+    margin: 9px 0 0 0;
+    padding: 10px 15px 10px 15px;
+    color: #5F5F5F;
+    border: none;
+    text-align: left;
+    font-family: inherit;
+    font-size: 0.95em;
+    outline: none;
+}
+
+footer {
+    color: #FFFFFF;
+    background: #1B2D42;
+}
+
+.footer {
+    padding: 40px 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#numeroVert {
+    width: 313px;
+    height: 44px;
+}
+
+#logoNB {
+    width: 219px;
+    height: 83px;
+}
+
+footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.reseauxSociaux ul {
+    display: flex;
+    gap: 10px;
+}
+.reseauxSociaux a {
+    text-decoration: none;
+    padding: 35px 0 0 0;
+    width: 35px;
+    display: block;
+}
+
+#X {
+    background: center no-repeat url(../svg/x.svg);
+}
+
+#Facebook {
+    background: center no-repeat url(../svg/facebook.svg);
+}
+
+#YouTube {
+    background: center no-repeat url(../svg/youtube.svg);
+}
+
+#LinkedIn {
+    background: center no-repeat url(../svg/linkedin.svg);
+}
+
+#Instagram {
+    background: center no-repeat url(../svg/instagram.svg);
+}
+
+h1 {
+    margin: 115px 0;
+    font-size: 2.3em;
+    text-align: center;
+}
+
+#lumiere {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+#lumiere li div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 490px;
+    height: 375px;
+    background: #CFDEE1;
+    border-radius: 35px;
+    border: #1B2D42 solid 4px;
+    gap: 56px;
+    transition: 0.25s;
+}
+
+#lumiere li div h3 {
+    height: 48px;
+}
+
+#lumiere button {
+    background: #1B2D42;
+    border: #1B2D42 solid 3px;
+    border-radius: 35px;
+    color: #FFFFFF;
+    font-family: inherit;
+    height: 51px;
+    transition: 0.25s;
+}
+
+#lumiere button:hover {
+    background: #E2F2F2;
+    color: #1B2D42;
+    transform: scale(130%);
+    transition: 0.25s;
+}
+
+#lumiere li div:hover {
+    transform: scale(115%);
+    transition: 0.25s;
+}
+
+.acceder {
+    font-family: inherit;
+    font-weight: bold;
+    padding: 0 84px;
+
+}
+
+.fleche {
+    width: 51px;
+    border-radius: 100px;
+}
+
+.fleche img {
+    height: 30px;
+    width: 30px;
+    filter: invert(100%);
+}
+
+.fleche:hover img {
+    filter: invert(12%) sepia(8%) saturate(5145%) hue-rotate(174deg) brightness(88%) contrast(86%);
+}
+
+.italique {
+    margin: 115px 0;
+    text-align: center;
+    font-style: italic;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 0 73px 73px 73px;
+    gap: 73px;
+}
+
+article {
+    position: relative;
+    display: grid;
+}
+
+article img {
+    background: #FFFFFF;
+    transition: 0.25s;
+    height: 374px;
+    width: 374px;
+    border-radius: 35px;
+}
+
+article:hover img {
+    transition: 0.25s;
+    transform: scale(115%);
+    filter: brightness(30%);
+}
+
+article .description {
+    margin: 10px 0 0 0;
+    transition: 0.25s;
+}
+
+article:hover .description {
+    margin: -100px 0 0 0;
+    visibility: hidden;
+    transition: 0.25s;
+}
+
+article .hidden {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+    font-size: 1.2em;
+    opacity: 0;
+    transition: 0s;
+    width: 374px;
+}
+
+article:hover .hidden {
+    opacity: 1;
+    transition: 0.25s;
+    transform: translate(-50%, -50%) scale(115%);
+}
