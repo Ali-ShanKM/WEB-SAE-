@@ -102,6 +102,10 @@ footer a {
     text-decoration: none;
 }
 
+.liensUtiles a:hover {
+    text-decoration: underline;
+}
+
 footer ul {
     list-style-type: none;
     padding: 0;
