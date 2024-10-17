@@ -78,6 +78,7 @@ main {
 footer {
     color: #FFFFFF;
     background: #1B2D42;
+    margin: 115px 0 0 0;
 }
 
 .footer {
@@ -277,4 +278,18 @@ article:hover .hidden {
     opacity: 1;
     transition: 0.25s;
     transform: translate(-50%, -50%) scale(115%);
+}
+
+.association {
+    margin: 0 250px;
+}
+
+h2 {
+    font-size: 1.8em;
+    padding: 10px 0 0 0;
+}
+
+.association p {
+    font-size: 1.5em;
+    padding: 0 0 10px 0;
 }
