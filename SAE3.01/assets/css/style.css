@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Inter';
     margin: 0;
@@ -40,23 +44,27 @@ main {
     gap: 75px;
     padding: 9px 0 0 0;
 }
+
 .navbar a {
     color: #0078BE;
     font-weight: bold;
     text-decoration: none;
 }
 
-.navbar .pageCourante a {
+.navbar .pageCourante a, .navbar .pageCourante a:hover {
     color: #56AE31;
-    text-decoration: underline 3px;
+    text-decoration: underline 3px #56AE31;
 }
 
 .navbar li {
     transition: 0.25s;
 }
 
+.navbar a:hover {
+    text-decoration: underline 3px #0078BE;
+}
+
 .navbar li:hover {
-    text-decoration: underline 3px;
     color: #0078BE;
     transition: 0.25s;
     transform: scale(115%);
@@ -285,15 +293,61 @@ article:hover .hidden {
 }
 
 .association {
-    margin: 0 250px;
+    margin: 0 400px 0 300px;
 }
 
 h2 {
     font-size: 1.8em;
     padding: 10px 0 0 0;
+    scroll-margin-top: 150px;
 }
 
 .association p {
     font-size: 1.5em;
     padding: 0 0 10px 0;
+}
+
+.derouler {
+    position: fixed;
+    top: 50%;
+    right: 25px;
+    text-align: center;
+    background: #FFFFFF;
+    padding: 15px;
+    width: 300px;
+}
+
+.derouler a {
+    color: #0078BE;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.derouler ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.derouler .lien {
+    transition: 0.25s;
+    padding: 10px 0;
+}
+
+/*.derouler a:hover {
+    text-decoration: underline 2px #0078BE;
+}*/
+
+.derouler .lien:hover {
+    transition: 0.25s;
+    transform: scale(115%);
+}
+
+.derouler span, .derouler span:hover {
+    width: 2px;
+    height: 20px;
+    margin: 5px auto;
+    border-left: 2px solid #56AE31;
+    font-style: normal;
+    border-bottom: none;
+    padding: 0;
 }
