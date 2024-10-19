@@ -305,16 +305,33 @@ h2 {
 .association p {
     font-size: 1.5em;
     padding: 0 0 10px 0;
+    color: #0A1C31;
+}
+
+.association li {
+    font-size: 1.5em;
+    color: #0A1C31;
+}
+
+.association ul {
+    padding-top: 0;
+}
+
+.association a {
+    color: #0A1C31;
 }
 
 .derouler {
     position: fixed;
-    top: 50%;
+    box-sizing: border-box;
+    bottom: 30%;
     right: 25px;
     text-align: center;
     background: #FFFFFF;
     padding: 15px;
     width: 300px;
+    border-radius: 22px;
+    box-shadow: 0 0 2px 0 grey;
 }
 
 .derouler a {
@@ -342,7 +359,7 @@ h2 {
     transform: scale(115%);
 }
 
-.derouler span, .derouler span:hover {
+.derouler span {
     width: 2px;
     height: 20px;
     margin: 5px auto;
@@ -350,4 +367,11 @@ h2 {
     font-style: normal;
     border-bottom: none;
     padding: 0;
+}
+
+#retour {
+    height: 25px;
+    width: 25px;
+    filter: invert(29%) sepia(86%) saturate(982%) hue-rotate(171deg) brightness(107%) contrast(109%);
+    transform: rotate(270deg);
 }
