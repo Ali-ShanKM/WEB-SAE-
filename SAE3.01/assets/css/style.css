@@ -261,6 +261,7 @@ article img {
     height: 374px;
     width: 374px;
     border-radius: 35px;
+    object-fit: cover;
 }
 
 article:hover img {
