@@ -217,7 +217,6 @@ h1 {
     font-family: inherit;
     font-weight: bold;
     padding: 0 84px;
-
 }
 
 .fleche {
@@ -433,4 +432,60 @@ h2 {
 #autres li div:hover {
     transform: scale(115%);
     transition: 0.25s;
+}
+
+#newsletters button {
+    background: #1B2D42;
+    border: #1B2D42 solid 3px;
+    border-radius: 35px;
+    color: #FFFFFF;
+    font-family: inherit;
+    height: 51px;
+    transition: 0.25s;
+}
+
+#newsletters button:hover {
+    background: #E2F2F2;
+    color: #1B2D42;
+    transform: scale(102%);
+    transition: 0.25s;
+}
+
+.sabonner {
+    font-family: inherit;
+    font-weight: bold;
+    padding: 0 84px;
+    width: 560px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    gap: 300px;
+}
+
+.formulaire {
+    color: #1B2D42;
+    font-family: inherit;
+    width: 560px;
+}
+
+.formulaire div {
+    padding: 15px 0;
+}
+
+.formulaire .saisir {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formulaire .saisir input {
+    font-family: inherit;
+    border-radius: 8px;
+    border: #CDCDCD solid 1px;
+    height: 20px;
+    width: 540px;
+    padding: 10px;
+    margin: 5px 0;
 }
