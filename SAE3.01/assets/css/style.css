@@ -90,7 +90,7 @@ footer {
 }
 
 .footer {
-    padding: 40px 60px;
+    padding: 30px 60px 15px 60px;
     display: flex;
     justify-content: space-between;
 }
@@ -330,7 +330,7 @@ h2 {
 .derouler {
     position: fixed;
     box-sizing: border-box;
-    bottom: 30%;
+    bottom: 26%;
     right: 25px;
     text-align: center;
     background: #FFFFFF;
@@ -355,10 +355,6 @@ h2 {
     transition: 0.25s;
     padding: 10px 0;
 }
-
-/*.derouler a:hover {
-    text-decoration: underline 2px #0078BE;
-}*/
 
 .derouler .lien:hover {
     transition: 0.25s;
