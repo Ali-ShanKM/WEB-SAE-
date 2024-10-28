@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    font-family: 'Inter';
+    font-family: 'Inter', 'sans-serif';
     margin: 0;
     padding: 0;
     background: #E2F2F2;
@@ -455,13 +455,13 @@ h2 {
     font-family: inherit;
     font-weight: bold;
     padding: 0 84px;
-    width: 560px;
+    width: 100%;
 }
 
 form {
     display: flex;
     justify-content: center;
-    gap: 300px;
+    gap: 15%;
 }
 
 .formulaire {
@@ -485,7 +485,18 @@ form {
     border-radius: 8px;
     border: #CDCDCD solid 1px;
     height: 20px;
-    width: 540px;
+    width: 96%;
     padding: 10px;
     margin: 5px 0;
+    outline: none;
+}
+
+.formulaire h2 {
+    text-align: center;
+}
+
+.formulaire .box {
+    border: #CDCDCD solid 1px;
+    border-radius: 22px;
+    padding: 4%;
 }
