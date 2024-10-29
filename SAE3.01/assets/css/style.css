@@ -457,17 +457,17 @@ h2 {
 form {
     display: flex;
     justify-content: center;
-    gap: 15%;
+    gap: 12%;
 }
 
 .formulaire {
     color: #1B2D42;
     font-family: inherit;
-    width: 560px;
+    width: 610px;
 }
 
 .formulaire div {
-    padding: 15px 0;
+    padding: 10px 0 40px 0;
 }
 
 .formulaire .saisir {
@@ -495,4 +495,71 @@ form {
     border: #CDCDCD solid 1px;
     border-radius: 22px;
     padding: 4%;
+}
+
+.dropdown-content {
+    position: absolute;
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    list-style-type: none;
+    align-items: center;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    background: #FFFFFF;
+    left: 50%;
+    transform: translate(-53%);
+    width: max-content;
+    box-shadow: 0 0 1px 0 grey;
+    margin: 15px;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.dropdown-content a {
+    color: #1B2D42;
+}
+
+.dropdown-content li, .dropdown-content li:hover {
+    transform: scale(100%);
+    padding: 3px 0;
+}
+
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.modes-de-transmission img {
+    mix-blend-mode: multiply;
+    height: 75%;
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modes-de-transmission a {
+    color: #1B2D42;
+    text-decoration: none;
+}
+
+.modes-de-transmission h3 {
+    text-align: center;
+    transition: 0.25s;
+}
+
+.modes-de-transmission a:hover {
+    text-decoration: underline 3px #1B2D42;
+}
+
+.modes-de-transmission h3:hover {
+    transition: 0.25s;
+    transform: scale(105%);
+}
+
+.modes-de-transmission p {
+    font-size: 1.2em;
+    margin: 50px 250px 0 250px;
+    color: #0A1C31;
 }
