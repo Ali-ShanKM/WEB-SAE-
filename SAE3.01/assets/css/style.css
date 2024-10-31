@@ -512,22 +512,18 @@ form {
     width: max-content;
     box-shadow: 0 0 1px 0 grey;
     margin: 15px;
-    transition: opacity 0.5s ease, visibility 0.5s ease;
-}
-
-.dropdown-content a {
-    color: #1B2D42;
+    transition: opacity 0.25s ease, visibility 0.25s ease;
 }
 
 .dropdown-content li, .dropdown-content li:hover {
     transform: scale(100%);
-    padding: 3px 0;
+    padding: 7px 0;
 }
 
 .dropdown:hover .dropdown-content {
     opacity: 1;
     visibility: visible;
-    transition: opacity 0.5s ease, visibility 0.5s ease;
+    transition: opacity 0.25s ease, visibility 0.25s ease;
 }
 
 .modes-de-transmission img {
