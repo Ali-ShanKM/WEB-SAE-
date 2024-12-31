@@ -335,7 +335,7 @@ h2 {
     text-align: center;
     background: #FFFFFF;
     padding: 15px;
-    width: 300px;
+    width: 275px;
     border-radius: 22px;
     box-shadow: 0 0 2px 0 grey;
 }
@@ -556,7 +556,7 @@ form {
 
 .modes-de-transmission p {
     font-size: 1.2em;
-    margin: 50px 250px 0 250px;
+    margin: 2% 10% 0 10%;
     color: #0A1C31;
 }
 
@@ -622,5 +622,13 @@ form {
 
     .derouler {
         visibility: hidden;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    footer ul {
+        padding: 200px 0;
     }
 }
