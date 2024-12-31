@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/searchBar.js" type="module"></script>
-    <script src="assets/js/footer.js" type="module"></script>
+    <script src="assets/js/pageCourante.js" type="module"></script>
 </head>
 <body>
 <header>
@@ -18,13 +18,13 @@
         <span></span>
     </label>
     <ul class="navbar">
-        <li><a href="index.php">Accueil</a></li>
-        <li class="pageCourante"><a href="association.html">L'association</a></li>
+        <li id="titleIndex"><a href="index.php">Accueil</a></li>
+        <li id="titleAssociation"><a href="association.php">L'association</a></li>
         <li>
             <div class="dropdown">
                 <a href="https://soshepatites.org/rubrique/brochures/">Santé – Social</a>
                 <ul class="dropdown-content">
-                    <li><a href="https://www.soshepatites.org/rubrique/brochures/?soshfilter=brochures">Outils et brochures</a></li>
+                    <li><a href="https://soshepatites.org/rubrique/brochures/?soshfilter=brochures">Outils et brochures</a></li>
                     <li><a href="https://soshepatites.org/le-foie-et-les-hepatites/">Le foie et les hépatites</a></li>
                     <li><a href="https://soshepatites.org/outils-non-invasifs-devaluation-de-fibrose/">Les outils non-invasifs d'évaluation de la fibrose</a></li>
                     <li><a href="https://soshepatites.org/quil-faut-savoir/">Ce qu'il faut savoir</a></li>
@@ -41,7 +41,7 @@
             <div class="dropdown">
                 <a href="">Prévention</a>
                 <ul class="dropdown-content">
-                    <li><a href="modes-de-contamination.php">Modes de contamination</a></li>
+                    <li id="titleModesDeContamination"><a href="modes-de-contamination.php">Modes de contamination</a></li>
                     <li><a href="https://soshepatites.org/le-depistage/">Le dépistage</a></li>
                     <li><a href="https://soshepatites.org/reduire-risques-de-contamination/">Réduire les risques de contaminiation</a></li>
                     <li><a href="https://soshepatites.org/la-vaccination/">La vaccination</a></li>

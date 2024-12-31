@@ -68,21 +68,21 @@ require_once './header.php';
             </div>
             <nav class="derouler">
                 <ul>
-                    <li class="lien"><a href="association.html#"><img id="retour" src="assets/svg/arrow.svg" alt="Retourner au début de la page"></a></li>
+                    <li class="lien"><a href="association.php#"><img id="retour" src="assets/svg/arrow.svg" alt="Retourner au début de la page"></a></li>
                     <li><span></span></li>
-                    <li class="lien"><a href="association.html#le-sens-de-sos-hepatites">Le sens de SOS Hépatites</a></li>
+                    <li class="lien"><a href="association.php#le-sens-de-sos-hepatites">Le sens de SOS Hépatites</a></li>
                     <li><span></span></li>
-                    <li class="lien"><a href="association.html#qu-en-est-il-pour-les-hepatites">Qu'en est-il pour les hépatites ?</a></li>
+                    <li class="lien"><a href="association.php#qu-en-est-il-pour-les-hepatites">Qu'en est-il pour les hépatites ?</a></li>
                     <li><span></span></li>
-                    <li class="lien"><a href="association.html#battez-vous-a-nos-cotes">Battez-vous à nos côtés</a></li>
+                    <li class="lien"><a href="association.php#battez-vous-a-nos-cotes">Battez-vous à nos côtés</a></li>
                     <li><span></span></li>
-                    <li class="lien"><a href="association.html#les-objectifs-de-lassociation">Les objectifs de l'association</a></li>
+                    <li class="lien"><a href="association.php#les-objectifs-de-lassociation">Les objectifs de l'association</a></li>
                     <li><span></span></li>
-                    <li class="lien"><a href="association.html#les-activites-de-lassociation">Les activités de l'association</a></li>
+                    <li class="lien"><a href="association.php#les-activites-de-lassociation">Les activités de l'association</a></li>
                     <li><span></span></li>
-                    <li class="lien"><a href="association.html#adherer-nous-trouver">Adhérer – Nous trouver</a></li>
+                    <li class="lien"><a href="association.php#adherer-nous-trouver">Adhérer – Nous trouver</a></li>
                     <li><span></span></li>
-                    <li class="lien"><a href="association.html#autres">Autres</a></li>
+                    <li class="lien"><a href="association.php#autres">Autres</a></li>
                 </ul>
             </nav>
 </main>
