@@ -299,7 +299,7 @@ article:hover .hidden {
 }
 
 .association {
-    margin: 0 400px 0 300px;
+    margin: 0 18% 0 12%;
 }
 
 h2 {
@@ -602,7 +602,7 @@ form {
         display: flex;
     }
 
-    #lumiere {
+    #lumiere, #autres {
         padding: 0;
         display: flex;
         flex-direction: column;
@@ -612,7 +612,15 @@ form {
         gap: 80px;
     }
 
-    #lumiere li div {
+    #lumiere li div, #autres li div {
         flex-direction: column;
+    }
+
+    .association {
+        margin: 0 8% 0 8%;
+    }
+
+    .derouler {
+        visibility: hidden;
     }
 }
