@@ -59,8 +59,9 @@
         </li>
         <li><a href="https://soshepatites.org/association/soutenez-nous/">Faire un don</a></li>
     </ul>
-    <label>
-        <input class="barreRecherche" type="search" placeholder="Rechercher">
+    <label class="barreRecherche">
+        <img src="assets/svg/loupe-search.svg" alt="">
+        <input type="search" placeholder="Rechercher">
     </label>
-    <a href="inscription.php" ><img id="userCircle" src="assets/svg/user-male-circle-svgrepo-com.svg" alt="Se connecter"></a>
+    <a href="connexion.php" ><img id="userCircle" src="assets/svg/user-male-circle-svgrepo-com.svg" title="Se connecter" alt="Se connecter"></a>
 </header>

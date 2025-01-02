@@ -16,11 +16,11 @@
         <div class="reseauxSociaux">
             <b>Réseaux sociaux</b>
             <ul>
-                <li><a href="https://twitter.com/sos_hepatites?lang=fr" id="X"></a></li>
-                <li><a href="https://fr-fr.facebook.com/SOS.hepatites.Federation/" id="Facebook"></a></li>
-                <li><a href="https://www.youtube.com/user/soshepatitesfd" id="YouTube"></a></li>
-                <li><a href="https://www.linkedin.com/company/soshepatites/?originalSubdomain=fr" id="LinkedIn"></a></li>
-                <li><a href="https://www.instagram.com/soshepatites/?hl=fr" id="Instagram"></a></li>
+                <li><a href="https://twitter.com/sos_hepatites?lang=fr" title="X" id="X"></a></li>
+                <li><a href="https://fr-fr.facebook.com/SOS.hepatites.Federation/" title="Facebook" id="Facebook"></a></li>
+                <li><a href="https://www.youtube.com/user/soshepatitesfd" title="YouTube" id="YouTube"></a></li>
+                <li><a href="https://www.linkedin.com/company/soshepatites/?originalSubdomain=fr" title="LinkedIn" id="LinkedIn"></a></li>
+                <li><a href="https://www.instagram.com/soshepatites/?hl=fr" title="Instagram" id="Instagram"></a></li>
             </ul>
         </div>
         <img id="logoNB" src="assets/img/logo-federation-sos-hepatites-blanc.png" alt="Logo SOS Hépatites en noir et blanc">

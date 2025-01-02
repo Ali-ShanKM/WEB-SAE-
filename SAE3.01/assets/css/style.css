@@ -75,6 +75,12 @@ main {
     border-radius: 22px;
     margin: 9px 0 0 0;
     padding: 10px 15px;
+
+    display: flex;
+}
+
+.barreRecherche input {
+    background: none;
     color: #5F5F5F;
     border: none;
     text-align: left;
@@ -83,10 +89,15 @@ main {
     outline: none;
 }
 
+.barreRecherche img {
+    height: 22px;
+    margin: 0 10px 0 0;
+}
+
 footer {
     color: #FFFFFF;
     background: #1B2D42;
-    margin: 115px 0 0 0;
+    margin: 90px 0 0 0;
 }
 
 .footer {
@@ -117,6 +128,10 @@ footer a {
 footer ul {
     list-style-type: none;
     padding: 0;
+}
+
+footer li {
+    margin: 5px 0;
 }
 
 .reseauxSociaux ul {
@@ -151,7 +166,7 @@ footer ul {
 }
 
 h1 {
-    margin: 115px 0;
+    margin: 90px 0;
     font-size: 2.3em;
     text-align: center;
 }
@@ -235,7 +250,7 @@ h1 {
 }
 
 .italique {
-    margin: 115px 0;
+    margin: 90px 0;
     text-align: center;
     font-style: italic;
 }
@@ -245,7 +260,7 @@ section {
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    padding: 0 73px 73px 73px;
+    padding: 0 73px;
     gap: 73px;
 }
 
@@ -330,7 +345,7 @@ h2 {
 .derouler {
     position: fixed;
     box-sizing: border-box;
-    bottom: 26%;
+    bottom: 32%;
     right: 25px;
     text-align: center;
     background: #FFFFFF;
@@ -353,7 +368,7 @@ h2 {
 
 .derouler .lien {
     transition: 0.25s;
-    padding: 10px 0;
+    padding: 7px 0;
 }
 
 .derouler .lien:hover {
@@ -447,7 +462,7 @@ h2 {
     transition: 0.25s;
 }
 
-.sabonner {
+.sabonner, .sinscrire, .seconnecter {
     font-family: inherit;
     font-weight: bold;
     padding: 0 84px;
@@ -463,11 +478,11 @@ form {
 .formulaire {
     color: #1B2D42;
     font-family: inherit;
-    width: 610px;
+    width: 500px;
 }
 
 .formulaire div {
-    padding: 10px 0 40px 0;
+    padding: 15px 0;
 }
 
 .formulaire .saisir {
@@ -487,6 +502,10 @@ form {
     outline: none;
 }
 
+.formulaire .saisir img {
+    height: 3px;
+}
+
 .formulaire h2 {
     text-align: center;
 }
@@ -495,6 +514,7 @@ form {
     border: #CDCDCD solid 1px;
     border-radius: 22px;
     padding: 4%;
+    box-shadow: 0 1px 2px 0 grey;
 }
 
 .dropdown-content {
@@ -569,20 +589,37 @@ form {
     cursor: pointer;
     flex-direction: column;
     gap: 4px;
+    margin: 10px 0 0 0;
 }
 
 .burger-menu span {
     display: block;
     width: 25px;
     height: 3px;
-    background-color: #333;
+    background-color: #5F5F5F;
 }
 
 #userCircle {
     width: 55px;
     height: 55px;
-    margin: 10px 5px 0 0;
+    margin: 15px 25px 0 0;
     filter: invert(29%) sepia(86%) saturate(982%) hue-rotate(171deg) brightness(107%) contrast(109%);
+}
+
+.autreMethode {
+    text-align: center;
+    margin: 55px 0 0 0;
+    font-size: 1.1em;
+}
+
+.autreMethode a {
+    color: #0078BE;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.autreMethode a:hover {
+    text-decoration: underline 2px;
 }
 
 @media (max-width: 768px) {
@@ -635,7 +672,12 @@ form {
         flex-direction: column;
     }
 
-    footer ul {
-        padding: 200px 0;
+    footer div {
+        padding: 25px 0 25px 0;
+    }
+
+    form {
+        flex-direction: column;
+        align-items: center;
     }
 }
