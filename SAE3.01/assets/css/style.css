@@ -430,7 +430,7 @@ h2 {
     transition: 0.25s;
 }
 
-#newsletters button {
+#forms button {
     background: #1B2D42;
     border: #1B2D42 solid 3px;
     border-radius: 35px;
@@ -440,7 +440,7 @@ h2 {
     transition: 0.25s;
 }
 
-#newsletters button:hover {
+#forms button:hover {
     background: #E2F2F2;
     color: #1B2D42;
     transform: scale(102%);
@@ -579,9 +579,9 @@ form {
 }
 
 #userCircle {
-    width: 57px;
-    height: 57px;
-    margin: 10px 0 0 0;
+    width: 55px;
+    height: 55px;
+    margin: 10px 5px 0 0;
     filter: invert(29%) sepia(86%) saturate(982%) hue-rotate(171deg) brightness(107%) contrast(109%);
 }
 

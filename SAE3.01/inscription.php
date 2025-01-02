@@ -7,7 +7,7 @@ require_once './header.php';
 ?>
 <main>
     <h1>Adhérer</h1>
-    <form id="newsletters">
+    <form id="forms">
         <div class="formulaire">
             <div class="box">
                 <div class="saisir">
@@ -37,6 +37,7 @@ require_once './header.php';
                 <button type="submit" class="sabonner">S'abonner</button>
             </div>
         </div>
+    <form>
 </main>
 <?php
 require_once './footer.php';

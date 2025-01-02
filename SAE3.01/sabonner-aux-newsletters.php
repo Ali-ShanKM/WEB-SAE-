@@ -7,7 +7,7 @@ require_once './header.php';
 ?>
         <main>
             <h1>S'abonner aux newsletters</h1>
-            <form id="newsletters">
+            <form id="forms">
                 <div class="formulaire">
                     <h2>Newsletter l'Hépatante</h2>
                     <div class="box">

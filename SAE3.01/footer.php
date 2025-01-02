@@ -10,6 +10,7 @@
                 <li><a href="https://soshepatites.org/plateforme/">Plateforme Hépatante</a></li>
                 <li><a href="https://soshepatites.org/sos-hepatites-pres-de-chez-vous/">SOS Hépatites près de chez vous</a></li>
                 <li><a href="https://soshepatites.org/mentions-legales/">Informations légales</a></li>
+                <li><a href="enquete.php">Répondre à l'enquête à destination des adhérents</a></li>
             </ul>
         </div>
         <div class="reseauxSociaux">
