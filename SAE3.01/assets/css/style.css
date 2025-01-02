@@ -74,7 +74,7 @@ main {
     background: #F5F5F5;
     border-radius: 22px;
     margin: 9px 0 0 0;
-    padding: 10px 15px 10px 15px;
+    padding: 10px 15px;
     color: #5F5F5F;
     border: none;
     text-align: left;
@@ -576,6 +576,13 @@ form {
     width: 25px;
     height: 3px;
     background-color: #333;
+}
+
+#userCircle {
+    width: 57px;
+    height: 57px;
+    margin: 10px 0 0 0;
+    filter: invert(29%) sepia(86%) saturate(982%) hue-rotate(171deg) brightness(107%) contrast(109%);
 }
 
 @media (max-width: 768px) {

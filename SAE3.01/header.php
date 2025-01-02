@@ -11,7 +11,7 @@
 <body>
 <header>
     <a href="index.php"><img id="logo" src="assets/img/logo-federation-sos-hepatites.png" alt="SOS Hépatites"></a>
-    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
     <label for="menu-toggle" class="burger-menu" aria-label="Menu">
         <span></span>
         <span></span>
@@ -62,4 +62,5 @@
     <label>
         <input class="barreRecherche" type="search" placeholder="Rechercher">
     </label>
+    <a href="inscription.php" ><img id="userCircle" src="assets/svg/user-male-circle-svgrepo-com.svg" alt="Se connecter"></a>
 </header>

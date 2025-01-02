@@ -1,18 +1,9 @@
-const title = document.title;
 const suffixe = '- SOS Hépatites';
-let id = '';
-
-switch (title) {
-    case `Accueil ${suffixe}`:
-        id = 'titleIndex';
-        break;
-    case `L'association ${suffixe}`:
-        id = 'titleAssociation';
-        break;
-    case `Modes de contamination ${suffixe}`:
-        id = 'titleModesDeContamination';
-        break;
+const tableauTitleId = {
+    [`Accueil ${suffixe}`]:'titleIndex',
+    [`L'association ${suffixe}`]:'titleAssociation',
+    [`Modes de contamination ${suffixe}`]:'titleModesDeContamination'
 }
 
-const elt = document.getElementById(id);
+const elt = document.getElementById(tableauTitleId[document.title]);
 elt.classList.add('pageCourante');
