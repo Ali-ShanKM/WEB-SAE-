@@ -34,55 +34,55 @@ require_once './header.php';
             <section>
                 <article>
                     <a href="https://soshepatites.org/mashletter-n36-septembre-2024/">
-                        <img src="assets/img/Mashletter n°36 – Septembre 2024.png" alt="Mashletter n°36 – Septembre 2024">
+                        <img src="assets/img/Mashletter%20n°36%20–%20Septembre%202024.png" alt="Mashletter n°36 – Septembre 2024">
                         <b class="hidden">Mashletter n°36 – Septembre 2024</b></a>
                     <p class="description">Mashletter n°36 – Septembre 2024</p>
                 </article>
                 <article>
                     <a href="https://soshepatites.org/forum-national-2024/">
-                        <img src="assets/img/Forum National 2024.png" alt="Forum National 2024">
+                        <img src="assets/img/Forum%20National%202024.png" alt="Forum National 2024">
                         <b class="hidden">Les inscriptions sont ouvertes</b>
                     </a>
                     <p class="description">Forum National 2024</p>
                 </article>
                 <article>
                     <a href="https://soshepatites.org/etude-vaccifoie/">
-                    <img src="assets/img/Étude Vaccifoie.png" alt="Étude Vaccifoie">
+                    <img src="assets/img/Étude%20Vaccifoie.png" alt="Étude Vaccifoie">
                     <b class="hidden">Faites entendre votre voix</b>
                 </a>
                     <p class="description">Étude Vaccifoie</p>
                 </article>
                 <article>
                     <a href="https://soshepatites.org/journee-mondiale-contre-lhepatite-2024-2/">
-                        <img src="assets/img/Journée mondiale contre l’hépatite 2024.png" alt="Journée mondiale contre l'hépatite 2024">
+                        <img src="assets/img/Journée%20mondiale%20contre%20l’hépatite%202024.png" alt="Journée mondiale contre l'hépatite 2024">
                         <b class="hidden">Communiqué de presse</b>
                     </a>
                     <p class="description">Journée mondiale contre l'hépatite 2024</p>
                 </article>
                 <article>
                     <a href="https://soshepatites.org/juin-sans-sucres-ajoutes-2023/">
-                        <img src="assets/img/Juin sans sucres ajoutés.png" alt="Juin sans sucres ajoutés">
+                        <img src="assets/img/Juin%20sans%20sucres%20ajoutés.png" alt="Juin sans sucres ajoutés">
                         <b class="hidden">Édition 2024 : Merci pour votre participation !</b>
                     </a>
                     <p class="description">Juin sans sucres ajoutés</p>
                 </article>
                 <article>
                     <a href="https://soshepatites.org/le-guide-anti-nash/">
-                        <img src="assets/img/Le Guide anti-NASH.png" alt="Le Guide anti-NASH">
+                        <img src="assets/img/Le%20Guide%20anti-NASH.png" alt="Le Guide anti-NASH">
                         <b class="hidden">Commander un exemplaire</b>
                 </a>
                     <p class="description">Le Guide anti-NASH</p>
                 </article>
                 <article>
                     <a href="https://soshepatites.org/a-vos-agendas-2018-1/">
-                        <img src="assets/img/À vos agendas !.png" alt="Prévenir les hépatites : Actions SOS Hépatites en région">
+                        <img src="assets/img/À%20vos%20agendas%20!.png" alt="Prévenir les hépatites : Actions SOS Hépatites en région">
                         <b class="hidden">À vos agendas !</b>
                     </a>
                     <p class="description">À vos agendas !</p>
                 </article>
                 <article>
                     <a href="https://soshepatites.org/covid-19-informations-a-destination-des-personnes-a-risques/">
-                        <img src="assets/img/Informations à destination des personnes à risques.png" alt="Informations à destination des personnes à risques">
+                        <img src="assets/img/Informations%20à%20destination%20des%20personnes%20à%20risques.png" alt="Informations à destination des personnes à risques">
                         <b class="hidden">Covid-19 : Restons informés et acteurs de notre santé !</b>
                     </a>
                     <p class="description">Informations à destination des personnes à risques</p>
