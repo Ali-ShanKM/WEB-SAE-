@@ -11,9 +11,9 @@ class Authentification {
     if($password !== $repeat) {
       throw new \Exception("Mots de passe différents");
     }
-    if($this->invalideEmail($email)) {
+    /*if($this->invalideEmail($email)) {
       throw new \Exception("Email invalide");
-    }
+    }*/
     if($this->userRepository->findUserByEmail($email)) {
       throw new \Exception("Utilisateur déjà enregistré");
     }
@@ -28,7 +28,7 @@ class Authentification {
    */
   public function authenticate(string $email, string $password) : true {
     $user = $this->userRepository->findUserByEmail($email);
-    if(!$user || $password !== $user->getPassword()) {
+    if(!$user || password_verify($password, $user->getPassword())) {
       throw new \Exception("Mot de passe ou email invalide");
     }
     return true;

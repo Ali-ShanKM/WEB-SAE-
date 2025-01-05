@@ -14,15 +14,15 @@ $pdo = $bdd->connexion();
 $trousseau = new MariaDBUserRepository($pdo);
 $auth = new Authentification($trousseau);
 
-
 if($_SERVER['REQUEST_METHOD'] === 'POST') {
+
     try {
-        $retour = $auth->authenticate($_POST['email'], $_POST['password']);
-        $message = "Authentification réussie";
+        $retour = $auth->register($_POST['email'], $_POST['password'], $_POST['repassword']);
+        $message = "Vous êtes enregistré. Vous pouvez vous authentifier";
     }
     catch(Exception $e) {
         $retour = false;
-        $message = "Authentification impossible : " . $e->getMessage();
+        $message = "Enregistrement impossible : " . $e->getMessage();
     }
     echo $message;
 }

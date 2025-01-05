@@ -7,38 +7,28 @@ require_once './header.php';
 ?>
 <main>
     <h1>Adhérer à SOS Hépatites</h1>
-    <form id="forms">
+    <form id="forms" action="signup.php" method="post">
         <div class="formulaire">
             <div class="box">
                 <div class="saisir">
-                    <label>
-                        Nom
-                        <input type="text" placeholder="Saisissez votre nom">
-                    </label>
+                    <label for="signup-lname">Nom</label>
+                    <input type="text" name="nom" id="signup-lname" placeholder="Saisissez votre nom" required>
                 </div>
                 <div class="saisir">
-                    <label>
-                        Prénom
-                        <input type="text" placeholder="Saisissez votre prénom">
-                    </label>
+                    <label for="signup-fname">Prénom</label>
+                    <input type="text" name="prenom" id="signup-fname" placeholder="Saisissez votre prénom" required>
                 </div>
                 <div class="saisir">
-                    <label>
-                        E-mail
-                        <input type="email" placeholder="Saisissez votre adresse e-mail">
-                    </label>
+                    <label for="signup-email">E-mail</label>
+                    <input type="email" name="email" id="signup-email" placeholder="Saisissez votre adresse e-mail" required>
                 </div>
                 <div class="saisir">
-                    <label>
-                        Mot de passe
-                        <input type="password" placeholder="Saisissez votre mot de passe">
-                    </label>
+                    <label for="signup-passwd">Mot de passe</label>
+                    <input type="password" name="password" id="signup-passwd" placeholder="Saisissez votre mot de passe" required>
                 </div>
                 <div class="saisir">
-                    <label>
-                        Confirmation du mot de passe
-                        <input type="password" placeholder="Confirmez votre mot de passe">
-                    </label>
+                    <label for="signup-repasswd">Confirmation du mot de passe</label>
+                    <input type="password" name="repassword" id="signup-repasswd" placeholder="Confirmez votre mot de passe" required>
                 </div>
                 <button type="submit" class="sinscrire">S'inscrire</button>
             </div>
