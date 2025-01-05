@@ -1,11 +1,15 @@
 <?php
+
+require_once 'IUserRepository.php';
+require_once 'User.php';
+
 class MariaDBUserRepository implements IUserRepository {
 
   public function __construct(private \PDO $dbConnexion) { }
 
   public function saveUser(User $user) : bool {
     $stmt = $this->dbConnexion->prepare(
-      "INSERT INTO users (email, password) VALUES (:email, :password)"
+      "INSERT INTO utilisateur (email, password) VALUES (:email, :password)"
     );
 
     return $stmt->execute([
@@ -15,9 +19,8 @@ class MariaDBUserRepository implements IUserRepository {
   }
 
   public function findUserByEmail(string $email) : ?User {
-    // TODO: Implement findUserByEmail() method.
     $stmt = $this->dbConnexion->prepare(
-      "SELECT * FROM users WHERE email = :email"
+      "SELECT * FROM utilisateur WHERE email = :email"
     );
     $stmt->execute(['email' => $email]);
     $result = $stmt->fetch(\PDO::FETCH_ASSOC);

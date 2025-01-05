@@ -618,7 +618,13 @@ form {
     text-decoration: none;
 }
 
-.autreMethode a:hover {
+.forgotpasswd {
+    color: #0078BE;
+    text-decoration: none;
+    text-align: right;
+}
+
+.autreMethode a:hover, .forgotpasswd:hover {
     text-decoration: underline 2px;
 }
 

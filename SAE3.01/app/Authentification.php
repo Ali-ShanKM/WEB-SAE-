@@ -1,5 +1,7 @@
 <?php
+
 class Authentification {
+
   public function __construct(private IUserRepository $userRepository) { }
 
   /**
@@ -26,8 +28,8 @@ class Authentification {
    */
   public function authenticate(string $email, string $password) : true {
     $user = $this->userRepository->findUserByEmail($email);
-    if(!$user || !password_verify($password, $user->getPassword())) {
-      throw new \Exception("Mot de pass ou email invalide");
+    if(!$user || $password !== $user->getPassword()) {
+      throw new \Exception("Mot de passe ou email invalide");
     }
     return true;
   }
