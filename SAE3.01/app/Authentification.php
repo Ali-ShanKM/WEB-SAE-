@@ -28,7 +28,7 @@ class Authentification {
    */
   public function authenticate(string $email, string $password) : true {
     $user = $this->userRepository->findUserByEmail($email);
-    if(!$user || password_verify($password, $user->getPassword())) {
+    if(!$user || !password_verify($password, $user->getPassword())) {
       throw new \Exception("Mot de passe ou email invalide");
     }
     return true;
