@@ -63,5 +63,11 @@
         <img src="assets/svg/loupe-search.svg" alt="">
         <input type="search" placeholder="Rechercher">
     </label>
-    <a href="connexion.php" ><img id="userCircle" src="assets/svg/user-male-circle-svgrepo-com.svg" title="Se connecter" alt="Se connecter"></a>
+    <?php
+    if(isset($_SESSION['email'])) {
+        echo "<a href='signout.php'><img id='signout' alt='Se deconnecter' title='Se deconnecter' src='assets/svg/share-svgrepo-com.svg'></a>";
+    } else {
+        echo "<a href='connexion.php'><img id='userCircle' src='assets/svg/user-male-circle-svgrepo-com.svg' title='Se connecter' alt='Se connecter'></a>";
+    }
+    ?>
 </header>

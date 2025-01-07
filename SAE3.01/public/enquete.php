@@ -13,7 +13,6 @@ if(isset($_SESSION['email'])) {
 ?>
     <main>
         <h1>Enquête à destination des adhérents</h1>
-        <?php echo $email_utilisateur;?>
     </main>
 <?php
 require_once './footer.php';

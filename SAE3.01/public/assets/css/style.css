@@ -599,7 +599,7 @@ form {
     background-color: #5F5F5F;
 }
 
-#userCircle {
+#userCircle, #signout {
     width: 55px;
     height: 55px;
     margin: 15px 25px 0 0;
@@ -654,6 +654,10 @@ form {
     color: #0078BE;
     text-decoration: none;
     font-size: 0.9em;
+}
+
+#signout {
+    rotate: 90deg;
 }
 
 @media (max-width: 768px) {
