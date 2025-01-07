@@ -19,8 +19,13 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     try {
         $retour = $auth->authenticate($_POST['email'], $_POST['password']);
         $message = "Authentification réussie";
-        $texte = "";
-        $lien = "<a href='enquete.php'>Acceder à l'enquête</a>";
+        if($_POST['email'] === "admin@sos-hepatites.fr") {
+            $texte = "<div>Bienvenue sur l'espace administrateur</div>";
+            $lien = "<a href='admin.php'>Acceder aux stats</a>";
+        } else {
+            $texte = "";
+            $lien = "<a href='enquete.php'>Acceder à l'enquête</a>";
+        }
     }
     catch(Exception $e) {
         $retour = false;
