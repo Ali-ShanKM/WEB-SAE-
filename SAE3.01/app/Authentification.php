@@ -7,18 +7,15 @@ class Authentification {
   /**
    * @throws \Exception
    */
-  public function register(string $email, string $password, string $repeat) : bool {
+  public function register(string $email, string $nom, string $prenom, string $password, string $repeat) : bool {
     if($password !== $repeat) {
-      throw new \Exception("Mots de passe différents");
+      throw new \Exception("Les mots de passe ne correspondent pas");
     }
-    /*if($this->invalideEmail($email)) {
-      throw new \Exception("Email invalide");
-    }*/
     if($this->userRepository->findUserByEmail($email)) {
-      throw new \Exception("Utilisateur déjà enregistré");
+      throw new \Exception("Cet e-mail est déjà utilisé");
     }
 
-    $user = new User($email, $password);
+    $user = new User($email, $nom, $prenom, $password);
 
     return $this->userRepository->saveUser($user);
   }
@@ -28,15 +25,11 @@ class Authentification {
    */
   public function authenticate(string $email, string $password) : true {
     $user = $this->userRepository->findUserByEmail($email);
-    if(!$user || password_verify($password, $user->getPassword())) {
-      throw new \Exception("Mot de passe ou email invalide");
+    if(!$user) {
+      throw new \Exception("E-mail invalide");
+    } else if ($password !== $user->getPassword()) {
+        throw new \Exception("Mot de passe invalide");
     }
     return true;
   }
-
-  private function invalideEmail(string $email) : bool {
-    $email = filter_var(trim($email), FILTER_SANITIZE_EMAIL);
-    return filter_var($email, FILTER_VALIDATE_EMAIL);
-  }
-
 }

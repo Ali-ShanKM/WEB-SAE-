@@ -17,14 +17,19 @@ $auth = new Authentification($trousseau);
 if($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     try {
-        $retour = $auth->register($_POST['email'], $_POST['password'], $_POST['repassword']);
-        $message = "Vous êtes enregistré. Vous pouvez vous authentifier";
+        $retour = $auth->register($_POST['email'], $_POST['nom'], $_POST['prenom'], $_POST['password'], $_POST['repassword']);
+        $message = "Vous êtes desormais enregistré";
+        $texte = "<div>Vous pouvez vous authentifier</div>";
+        $lien = "<a href='connexion.php'>Se connecter</a>";
     }
     catch(Exception $e) {
         $retour = false;
-        $message = "Enregistrement impossible : " . $e->getMessage();
+        $message = "Enregistrement impossible";
+        $texte = $e->getMessage();
+        $texte = "<div>$texte</div>";
+        $lien = "<a href='inscription.php'>Retour</a>";
     }
-    echo $message;
+    echo "<main><h1>$message</h1><div class='container'><div class='info'>$texte$lien</div></div></main>";
 }
 
 require_once 'footer.php';

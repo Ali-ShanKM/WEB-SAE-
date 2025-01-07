@@ -624,8 +624,36 @@ form {
     text-align: right;
 }
 
-.autreMethode a:hover, .forgotpasswd:hover {
+.autreMethode a:hover, .forgotpasswd:hover, .info a:hover {
     text-decoration: underline 2px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 22px;
+    box-shadow: 0 0 2px 0 grey;
+    display: flex;
+    width: 475px;
+    flex-direction: column;
+    gap: 50px;
+    font-size: 1.2em;
+    padding: 50px;
+}
+
+
+.info a {
+    color: #0078BE;
+    text-decoration: none;
+    font-size: 0.9em;
 }
 
 @media (max-width: 768px) {
