@@ -15,7 +15,6 @@ class BddConnect {
     $this->dbname = "grp3";
     */
 
-
     $this->host = "172.16.8.65";
     $this->login = "alishan.kassoumamode";
     $this->password = "6c1fe720";
