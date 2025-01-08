@@ -8,18 +8,18 @@ class BddConnect {
   protected string $dbname;
 
   public function __construct() {
-    /*
+
     $this->host = "127.0.0.1";
     $this->login = "root";
     $this->password = "";
     $this->dbname = "grp3";
-    */
 
+/*
     $this->host = "172.16.8.65";
     $this->login = "alishan.kassoumamode";
     $this->password = "6c1fe720";
     $this->dbname = "grp203_3";
-
+*/
   }
 
   public function connexion() : \PDO {
