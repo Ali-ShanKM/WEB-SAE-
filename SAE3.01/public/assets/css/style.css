@@ -462,7 +462,7 @@ h2 {
     transition: 0.25s;
 }
 
-.sabonner, .sinscrire, .seconnecter {
+.sabonner, .sinscrire, .seconnecter, .envoyer {
     font-family: inherit;
     font-weight: bold;
     padding: 0 84px;
@@ -497,6 +497,16 @@ form {
     border: #CDCDCD solid 1px;
     height: 20px;
     width: 96%;
+    padding: 10px;
+    margin: 5px 0;
+    outline: none;
+}
+
+.formulaire .saisir select {
+    font-family: inherit;
+    border-radius: 8px;
+    border: #CDCDCD solid 1px;
+    height: 40px;
     padding: 10px;
     margin: 5px 0;
     outline: none;
@@ -658,6 +668,14 @@ form {
 
 #signout {
     rotate: 90deg;
+}
+
+.obligatoire {
+    color: #ff0000;
+}
+
+.cacher {
+    display: none;
 }
 
 @media (max-width: 768px) {

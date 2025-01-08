@@ -2,5 +2,7 @@
 <project version="4">
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/SAE3.01/app/BddInit.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/SAE3.01/public/enquete.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/SAE3.01/public/envoyer-enquete.php" dialect="GenericSQL" />
   </component>
 </project>
