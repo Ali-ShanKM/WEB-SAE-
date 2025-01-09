@@ -65,7 +65,7 @@
     </label>
     <?php
     if(isset($_SESSION['email'])) {
-        echo "<a href='signout.php'><img id='signout' alt='Se deconnecter' title='Se déconnecter du compte\n" . $_SESSION['email'] . "' src='assets/svg/share-svgrepo-com.svg'></a>";
+        echo "<a href='signout.php'><img id='signout' alt='Se deconnecter' title='Se déconnecter du compte" . PHP_EOL . $_SESSION['email'] . "' src='assets/svg/share-svgrepo-com.svg'></a>";
     } else {
         echo "<a href='connexion.php'><img id='userCircle' src='assets/svg/user-male-circle-svgrepo-com.svg' title='Se connecter' alt='Se connecter'></a>";
     }
