@@ -6,6 +6,11 @@ $title = "Admin";
 require_once './header.php';
 require_once '../app/BddConnect.php';
 
+if(!isset($_SESSION['email']) || $_SESSION['email'] !== "admin@soshepatites.org") {
+    header("Location: connexion.php");
+    exit();
+}
+
 $bdd = new BddConnect();
 $pdo = $bdd->connexion();
 
@@ -46,13 +51,13 @@ $situationCounts = array_count_values($situations);
     </div>
 
     <!-- Graphique pour le lieu de vie -->
-    <section>
+    <div class="stats">
         <h2>Répartition des utilisateurs par lieu de vie</h2>
         <div id="lieuDeVie-chart"></div>
-    </section>
+    </div>
 
     <!-- Tableau des situations -->
-    <section>
+    <div class="stats">
         <h2>Répartition des utilisateurs par situation</h2>
         <table id="situation-table">
             <thead>
@@ -72,7 +77,7 @@ $situationCounts = array_count_values($situations);
             <?php endforeach; ?>
             </tbody>
         </table>
-    </section>
+    </div>
 
     <!-- D3.js scripts -->
     <script src="https://d3js.org/d3.v6.min.js"></script>
@@ -81,12 +86,12 @@ $situationCounts = array_count_values($situations);
         const regionData = <?php echo json_encode($regionCounts); ?>;
         const regionChart = d3.select("#graphiqueRegion")
             .append("svg")
-            .attr("width", 600)
-            .attr("height", 400);
+            .attr("width", 1000)
+            .attr("height", 600);
 
         const regionMargin = { top: 20, right: 20, bottom: 40, left: 40 };
-        const regionWidth = 600 - regionMargin.left - regionMargin.right;
-        const regionHeight = 400 - regionMargin.top - regionMargin.bottom;
+        const regionWidth = 1000 - regionMargin.left - regionMargin.right;
+        const regionHeight = 600 - regionMargin.top - regionMargin.bottom;
 
         const regionX = d3.scaleBand()
             .domain(Object.keys(regionData))
@@ -122,23 +127,57 @@ $situationCounts = array_count_values($situations);
 
         // Graphique du lieu de vie (pie chart)
         const lieuDeVieData = <?php echo json_encode($lieuDeVieCounts); ?>;
+        const width = 500;
+        const height = 500;
+        const radius = Math.min(width, height) / 2;
+
         const lieuDeVieChart = d3.select("#lieuDeVie-chart")
             .append("svg")
-            .attr("width", 500)
-            .attr("height", 500)
+            .attr("width", width)
+            .attr("height", height)
             .append("g")
-            .attr("transform", "translate(250, 250)");
+            .attr("transform", `translate(${width / 2}, ${height / 2})`);
 
         const pie = d3.pie().value(d => d[1]);
-        const arc = d3.arc().innerRadius(0).outerRadius(200);
+        const arc = d3.arc().innerRadius(0).outerRadius(radius);
+        const color = d3.scaleOrdinal(d3.schemeCategory10);
 
         const pieData = pie(Object.entries(lieuDeVieData));
+
+        // Ajouter un conteneur pour le texte d'info-bulle
+        const tooltip = d3.select("#lieuDeVie-chart")
+            .append("div")
+            .style("position", "absolute")
+            .style("background", "white")
+            .style("border", "1px solid #ccc")
+            .style("padding", "5px")
+            .style("border-radius", "5px")
+            .style("box-shadow", "0 2px 4px rgba(0, 0, 0, 0.2)")
+            .style("pointer-events", "none")
+            .style("opacity", 0);
 
         lieuDeVieChart.selectAll("path")
             .data(pieData)
             .enter().append("path")
             .attr("d", arc)
-            .attr("fill", (d, i) => d3.schemeCategory10[i]);
+            .attr("fill", (d, i) => color(i))
+            .on("mouseover", function (event, d) {
+                // Afficher le tooltip
+                tooltip.style("opacity", 1)
+                    .html(`<strong>${d.data[0]}</strong>: ${d.data[1]} utilisateurs`)
+                    .style("left", (event.pageX + 10) + "px")
+                    .style("top", (event.pageY + 10) + "px");
+            })
+            .on("mousemove", function (event) {
+                // Déplacer le tooltip avec la souris
+                tooltip.style("left", (event.pageX + 10) + "px")
+                    .style("top", (event.pageY + 10) + "px");
+            })
+            .on("mouseout", function () {
+                // Cacher le tooltip
+                tooltip.style("opacity", 0);
+            });
+
 
         // Graphique des situations
         const situationTable = document.querySelector("#situation-table");
